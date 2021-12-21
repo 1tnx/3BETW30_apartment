@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Appartement</title>
+    </head>
+    <body>
+
+        <h1>Encoder les données de la pièce</h1>
+
+        <form method="post" action="/newRoom">
+            <label>
+                <span>Pièce:</span>
+                <input type="text" id="room" name="room"><br>
+            </label>
+            <label>
+                <span for="width">Largeur:</span>
+                <input type="number" id="width" name="width"><br>
+            </label>
+            <label>
+                <span for="length">Longueur:</span>
+                <input type="number" id="length" name="length"><br><br>
+            </label>
+            <input type="submit" value="Enregistrer">
+        </form>
+
+        <br>
+        <br>
+
+        <label>
+            <button onclick="surfaceFunction()">Calculer la surface</button>
+            <span id="surface-result"></span>
+        </label>
+    </body>
+</html>
+
+<script>
+    function surfaceFunction() {
+        let length = document.getElementById("length").value;
+        let width = document.getElementById("width").value;
+        let surface = length * width;
+        let text = "Surface: " + surface + "M2";
+
+        document.getElementById("surface-result").innerHTML = text;
+
+    }
+</script>

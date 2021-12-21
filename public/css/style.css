@@ -1,0 +1,44 @@
+body {
+    width: 500px;
+    font-family: Arial;
+    font-size: 12px;
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    padding: 2px;
+}
+
+label span{
+    display: inline-block;
+    text-align: left;
+    width: 100px;
+}
+
+input[type=submit] {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+
+button {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+}
+
+.surface-inline {
+    display: inline-block;
+}
+
+.p3 {
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.p4 {
+    background-color: lightblue;
+    padding: 5px;
+}

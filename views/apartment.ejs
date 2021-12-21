@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Appartement</title>
+    </head>
+    <body>
+
+        <h1>Liste de pièces de l'appartement</h1>
+        
+        
+        <% for(let i=0; i<roomList.length;i++){ %>
+            <p class="p3">Pièce: <%= roomList[i].name %> <%= roomList[i].length * roomList[i].width %>M2</p> 
+         <% } %>
+
+        <p class="p4">Surface totale: <%=  %>M2</p>
+
+        <form action="/">
+            <input type="submit" value="Encoder une autre pièce"></button>
+        </form>
+
+    </body>
+</html>
